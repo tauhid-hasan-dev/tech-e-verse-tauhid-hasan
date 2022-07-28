@@ -4,11 +4,13 @@ body::before {
     height: 80px;
 }
 
+/* banner text aligned centered */
 .textCarousel {
     top: 30% !important;
     bottom: auto !important;
 }
 
+/* banner text responsive */
 @media screen and (min-width:360px) and (max-width:576px) {
     .responsive-text {
         padding-bottom: 0.25rem !important;
