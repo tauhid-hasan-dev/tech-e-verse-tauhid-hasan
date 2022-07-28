@@ -29,23 +29,24 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navmenu">
                         <ul class="navbar-nav ">
                             <li class="nav-item mx-2">
-                                <a href="#learn" class="nav-link">Home</a>
+                                <a href="#" class="nav-link">Home</a>
                             </li>
                             <li class="nav-item mx-2">
                                 <a href="#courses" class="nav-link">Courses</a>
                             </li>
                             <li class="nav-item mx-2">
-                                <a href="#instructors" class="nav-link">Deal</a>
+                                <a href="#deal" class="nav-link">Deal</a>
                             </li>
                             <li class="nav-item mx-2">
-                                <a href="#contact" class="nav-link">Success</a>
+                                <a href="#success" class="nav-link">Success</a>
                             </li>
                             <li class="nav-item mx-2">
                                 <a href="#about" class="nav-link">About</a>
                             </li>
                         </ul>
                         <button type="button"
-                            class="btn btn-outline-primary ms-lg-5 ms-md-0 mt-lg-0 mt-md-3 mt-sm-3 ms-sm-0 ">Register</button>
+                            class="btn btn-outline-primary ms-lg-5 ms-md-0 mt-lg-0 mt-md-3 mt-sm-3 ms-sm-0 "
+                            data-bs-toggle="modal" data-bs-target="#register">Register</button>
                     </div>
                 </div>
             </nav>
@@ -95,7 +96,7 @@
         </section>
     </header>
     <!-- courses -->
-    <main id="courses ">
+    <main id="courses">
         <section class="container ">
             <div class="text-center pt-5 pb-5">
                 <h1>Discover Our Popular Courses</h1>
@@ -219,7 +220,63 @@
                 </div>
             </div>
         </section>
+        <div class="text-center py-5">
+            <button type="button" class="btn btn-primary btn-lg ">See more courses</button>
+        </div>
+        <!-- register section -->
+        <section class="container py-5 px-5 bg-primary text-white rounded">
+            <div class="row py-3 px-5 align-items-center">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-sm-center text-md-center text-lg-start">
+                    <h1 class=" mb-4 fw-bold">Ready to join?</h1>
+                    <p class="mb-4">It is a long established fact that a reader will be distracted by the readable
+                        content of a page
+                        when
+                        looking at its layout.</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-sm-center text-md-center text-lg-end">
+                    <button type="button" class="btn btn-light text-primary btn-lg " data-bs-toggle="modal"
+                        data-bs-target="#register">Register
+                        Now</button>
+                </div>
+        </section>
+        <!-- Modal added to the register button -->
+        <div class="modal fade" id="register" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="enrollLabel">Register Now</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body px-4">
+                        <p class="lead">Fill out this form we will back to you</p>
+                        <div class="mb-3">
+                            <label for="first-name" class="col-form-label">First Name:</label>
+                            <input type="text" id="first-name" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="last-name" class="col-form-label">Last Name:</label>
+                            <input type="text" id="last-name" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">Email:</label>
+                            <input type="email" id="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="col-form-label">Phone:</label>
+                            <input type="tel" id="phone" class="form-control">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+
+
+
 
 
 
